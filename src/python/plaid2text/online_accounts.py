@@ -5,6 +5,7 @@ import datetime
 import os
 import sys
 import textwrap
+import json
 
 import plaid
 from plaid.api import plaid_api
