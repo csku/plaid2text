@@ -188,6 +188,8 @@ class PlaidAccess():
 
 def store_transactions (options, accounts):
     for account in accounts:
+        if account.posting_account == None:     # skip accounts in item that don't exist in config file
+            continue
         if options.dbtype == 'mongodb':
             sm = storage_manager.MongoDBStorage(
                 options.mongo_db,
