@@ -28,7 +28,7 @@ try:
         'prompt-toolkit==3.0.30',
         
         # the heart of the program
-        'plaid-python==12.0.0',
+        'plaid-python==20.0.1',
         'beancount==2.3.5',
     ])
 

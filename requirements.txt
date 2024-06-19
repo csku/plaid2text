@@ -17,7 +17,7 @@ idna==3.4
 iniconfig==1.1.1
 lxml==4.9.1
 packaging==21.3
-plaid-python==12.0.0
+plaid-python==20.0.1
 pluggy==1.0.0
 ply==3.11
 prompt-toolkit==3.0.30
