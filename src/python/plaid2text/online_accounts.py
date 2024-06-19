@@ -28,7 +28,7 @@ class PlaidAccess():
             self.client_id, self.secret = cm.get_plaid_config()
 
         configuration = plaid.Configuration(
-            host = plaid.Environment.Development,
+            host = plaid.Environment.Production,
             api_key = {
                 'clientId':self.client_id,
                 'secret': self.secret,

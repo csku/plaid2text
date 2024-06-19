@@ -244,7 +244,7 @@ def create_account(account):
 
         # create link token
         configuration = plaid.Configuration(
-            host=plaid.Environment.Development,
+            host=plaid.Environment.Production,
             api_key={
                 'clientId': client_id,
                 'secret': secret,
@@ -366,7 +366,7 @@ def update_link_token(access_token):
     # Obtain new link token
     client_id, secret = get_plaid_config()
     configuration = plaid.Configuration(
-        host=plaid.Environment.Development,
+        host=plaid.Environment.Production,
         api_key={
             'clientId': client_id,
             'secret': secret,
