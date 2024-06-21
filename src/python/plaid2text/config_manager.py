@@ -405,7 +405,7 @@ def update_link_token(access_token):
 
     account_name = get_account_in_item(access_token)
 
-    print('Link token updated for bank login containing ' + account_name +'.\nRun \'python3 -m http.server\' from ',DEFAULT_CONFIG_DIR,' and then visit \'localhost:8000\' in your browser to complete authentication with Plaid. Then, start downloading transactions again.')
+    print('Link token updated for bank login containing ' + account_name +'.\nRun \'python3 -m http.server\' from ',DEFAULT_CONFIG_DIR,' and then visit \'localhost:8000/auth.html\' in your browser to complete authentication with Plaid. Then, start downloading transactions again.')
     sys.exit(0)
 
 def get_account_in_item(access_token):
